@@ -806,7 +806,21 @@ border-radius: 50%;
 	padding: 4px;
 }
 .social-links li.twitter a:hover {
-	color: #55acee;
+	background: linear-gradient(45deg, #833ab4, #fd1d1d, #ff8e53);
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite;
+    color: #ffffff;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .social-links li.skype a:hover {
 	color: #00aff0;
@@ -815,7 +829,7 @@ border-radius: 50%;
 	color: #0976b4;
 }
 .social-links li.googleplus a:hover {
-	color: #dd4b39;
+	color: #25D366;
 }
 .social-links li.youtube a:hover {
 	color: #b31217;
