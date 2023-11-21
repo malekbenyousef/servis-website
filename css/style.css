@@ -82,6 +82,7 @@ img {
 }
 .list-unstyled li {
 	padding: 5px 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .list-horizontal {
 	padding: 15px 0;
@@ -225,6 +226,21 @@ border:0px;
 	margin-top: 80px;
 	z-index: 3;
 }
+#toggleLanguage {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background-color: rgb(72, 61, 0); /* Change the background color as needed */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
 .transprant-bg:after {
 	content: "";
 	position: absolute;
@@ -637,7 +653,7 @@ padding: 10px 0;
         height: 20px;
     }
 	.banner {
-        height: 50px; /* Allow the height to adjust based on content */
+        height: auto; /* Allow the height to adjust based on content */
         min-height: auto; /* Allow the minimum height to adjust based on content */
         margin-bottom: 20px; /* Adjust margin as needed */
     }
@@ -714,6 +730,7 @@ padding: 10px 0;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	
 }
 
   
@@ -728,6 +745,7 @@ padding: 10px 0;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	font-family: 'Times New Roman', Times, serif;
 	padding: 10px 0;
 }
 .brand a {
