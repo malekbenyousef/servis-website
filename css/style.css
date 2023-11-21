@@ -637,7 +637,7 @@ padding: 10px 0;
         height: 20px;
     }
 	.banner {
-        height: auto; /* Allow the height to adjust based on content */
+        height: 50px; /* Allow the height to adjust based on content */
         min-height: auto; /* Allow the minimum height to adjust based on content */
         margin-bottom: 20px; /* Adjust margin as needed */
     }
