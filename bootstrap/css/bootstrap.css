@@ -1232,6 +1232,7 @@ ol ol {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .list-inline {
   padding-left: 0;
@@ -1586,6 +1587,7 @@ pre code {
   }
   .col-sm-12 {
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
   }
   .col-sm-11 {
     width: 91.66666667%;
@@ -4908,6 +4910,8 @@ a.thumbnail.active {
 .media-heading {
   margin-top: 0;
   margin-bottom: 5px;
+  font-weight: bold;
+  font-size: large;
 }
 .media-list {
   padding-left: 0;
