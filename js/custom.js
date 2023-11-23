@@ -6,7 +6,15 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+		$(".banner-image").backstretch([
+			'images/banner1.jpg',
+			'images/banner2.jpg',
+			'images/banner3.jpg',
+			'images/banner4.jpg',
+			'images/banner5.jpg',
+			// Add more image paths as needed
+		], { duration: 3000, fade: 750 });
+		
 		
 		// Fixed header
 		//-----------------------------------------------
