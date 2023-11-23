@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 200px;
+    background-image:url(images/background.jpg);
+}
+
+.toggle-nav {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.toggle-nav span {
+    background-color: #000000;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    display: block;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 40px 20px; /* Increase the top and bottom padding */
+    box-sizing: border-box;
+    z-index: 999;
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Add padding transition */
+}
+
+.navigation-menu.fixed {
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduce the padding when fixed */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 90px;
+    transition: max-height 0.3s ease; /* Add a smooth transition for the logo height */
+    border-radius: 60%;
+}
+
+.navigation-menu.fixed .logo img {
+    max-height: 30px; /* Reduce the logo height when fixed */
+}
+
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation-menu li {
+    margin-right: 20px;
+}
+
+.navigation-menu a {
+    text-decoration: wavy;
+    color: white;
+    transition: color 0.3s ease;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation-menu a:hover {
+    color: gold;
+}
+.content-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
+    
+}
+
+.text-box {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    order: 1; /* Change the order of the text box */
+}
+
+.image-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    order: 2; /* Change the order of the image box */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #000;
+    color: rgba(255, 255, 0, 0.542);
+    border-radius: 20%;
+}
+
+/* Add styles for the image inside the image box */
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-nav {
+        display: flex;
+    }
+
+    .navigation-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 60px 20px 20px 20px;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+    }
+
+    .navigation-menu li {
+        margin: 10px 0;
+    }
+}
